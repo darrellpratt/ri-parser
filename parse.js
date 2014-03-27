@@ -28,16 +28,19 @@ function findVals(file, id) {
   console.log(file);
   console.time("findVals");
   oboe(fs.createReadStream(jsonDir + file)).on('node',
-        {
-          'selections': function(scheme){
-             //console.log(scheme);
-        },
-        '{nodeId type}': function(item) {
+      {
+        'selections': function(scheme){
+           //console.log(scheme);
+         },
+        '{nodeId type}': function(item, path, ancestors) {
           if (item.type === 'GROUP_LEVEL_ITEM' && item.nodeId === id) {
               console.log(item);
-              console.log(file);
+              console.log('FILE: ' + file);
+              console.dir(path);
+              // console.log('ANCESTORS_0: ' + ancestors[0]);
+              // console.dir('ANCESTORS: ' + ancestors);
             }
-          }
+        }
       }).on('done', function (json) {
         console.log('request completed');
         console.timeEnd("findVals");
