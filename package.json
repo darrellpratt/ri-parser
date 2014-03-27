@@ -1,0 +1,14 @@
+{
+    "name": "riParser",
+    "description": "RI MCM Parser",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "oboe": "*",
+        "Q": "*",
+        "underscore": "*",
+        "promise": "*",
+        "JSONStream": "*",
+        "event-stream": "*"
+    }
+}

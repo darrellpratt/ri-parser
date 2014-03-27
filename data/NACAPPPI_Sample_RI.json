@@ -1,0 +1,1976 @@
+{
+    "requestInstance": {
+        "id": "EC36CDF299C966FDE043B134070AD300",
+        "portfolioId": "6536e2ffb89b8eb058731d40885072a0",
+        "portfolioItemId": "A6F0BBCDC9E19394E1231660C2A290A0",
+        "engineInstanceId": "818AC2AE9EE64CFBADBEABA528D17E70",
+        "reportType": "BuilderAccessPoint",
+        "categoryId": "NACAPPPI",
+        "clientId": "1333",
+        "datascopeId": "63F574CC195DEA6129A85E40285072A0",
+        "datascopeNativeId": null,
+        "datascopeNativeName": "NAC Applegate Farms",
+        "datascopeName": null,
+        "selectionsMissing": null,
+        "valid": null,
+        "coreData": {
+            "guid": "EC36CDF299C966FDE043B134070AD300",
+            "title": "QF Scan Market",
+            "internalTitle": "QF01",
+            "nativeName": "QF01",
+            "runType": "FAVOURITES",
+            "friendlyUrl": "https://answers.nielsen.com/portal/site/answers/menuitem.b96e53097992bc115aac7970f75072a0/"
+        },
+        "prompts": [
+            {
+                "promptId": "Products_QF",
+                "basePromptId": "Products_QF",
+                "promptName": "Products",
+                "dimension": "PRDC",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "coachLine": "Select one to many Products",
+                "promptType": "BASE",
+                "type": "Standard",
+                "hidden": false,
+                "editLayoutDisplay": false,
+                "logical": null,
+                "filteredViews": null,
+                "filteredFunctions": null,
+                "subPrompts": null,
+                "lowLevelChar": null
+            },
+            {
+                "promptId": "Product Share_QF",
+                "basePromptId": "Product Share_QF",
+                "promptName": "Product Share Basis",
+                "dimension": "PRDC_SHR",
+                "minSelections": 1,
+                "maxSelections": 1,
+                "coachLine": "Select one product share basis",
+                "promptType": "BASE",
+                "type": "Standard",
+                "hidden": false,
+                "editLayoutDisplay": true,
+                "logical": null,
+                "filteredViews": null,
+                "filteredFunctions": null,
+                "subPrompts": null,
+                "lowLevelChar": null
+            },
+            {
+                "promptId": "Periods_QF",
+                "basePromptId": "Periods_QF",
+                "promptName": "Periods",
+                "dimension": "PRD",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "coachLine": "Select one to many Periods",
+                "promptType": "BASE",
+                "type": "Standard",
+                "hidden": false,
+                "editLayoutDisplay": false,
+                "logical": null,
+                "filteredViews": null,
+                "filteredFunctions": null,
+                "subPrompts": null,
+                "lowLevelChar": null
+            },
+            {
+                "promptId": "Markets_QF",
+                "basePromptId": "Markets_QF",
+                "promptName": "Markets",
+                "dimension": "MRKT",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "coachLine": "Select one to many Markets",
+                "promptType": "BASE",
+                "type": "Standard",
+                "hidden": false,
+                "editLayoutDisplay": false,
+                "logical": null,
+                "filteredViews": null,
+                "filteredFunctions": null,
+                "subPrompts": null,
+                "lowLevelChar": null
+            },
+            {
+                "promptId": "Fact_QF",
+                "basePromptId": "Fact_QF",
+                "promptName": "Facts",
+                "dimension": "FCT",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "coachLine": "Select one to many Store Facts",
+                "promptType": "BASE",
+                "type": "Standard",
+                "hidden": false,
+                "editLayoutDisplay": false,
+                "logical": null,
+                "filteredViews": null,
+                "filteredFunctions": null,
+                "subPrompts": null,
+                "lowLevelChar": null
+            }
+        ],
+        "dataSet": [
+            {
+                "promptId": "Products_QF",
+                "basePromptId": "Products_QF",
+                "originalPromptId": "Products_QF",
+                "promptName": "Products",
+                "promptLabel": "Products",
+                "virtualDim": null,
+                "hiddenPrompt": false,
+                "logicalDimId": "PRDC",
+                "logicalId": "PRDC",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "valid": true,
+                "selections": [
+                    {
+                        "id": "0",
+                        "active": true,
+                        "items": [
+                            {
+                                "id": null,
+                                "invisible": false,
+                                "nodeId": "CHR",
+                                "type": "VIEW",
+                                "desc": "Characteristics",
+                                "appDesc": "Characteristics",
+                                "leaf": false,
+                                "valid": true,
+                                "status": "true",
+                                "promptId": "Products_QF",
+                                "originalPromptId": "Products_QF",
+                                "showTotalsOnly": false,
+                                "addTotal": false,
+                                "baseUuid": "CHR|VIEW|Products_QF|0",
+                                "upcCount": 0,
+                                "thruStart": null,
+                                "thruIndex": 0,
+                                "usedInLayout": null,
+                                "includeAllChildren": null,
+                                "functionType": [],
+                                "pathInfo": [],
+                                "pathInfoIds": [],
+                                "pathInfoTypes": [],
+                                "children": [
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "R_CATEGORY_3",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "CATEGORY",
+                                        "appDesc": "CATEGORY",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "R_CATEGORY_3|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG",
+                                                "appDesc": "HOT DOG",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_CATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_CATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "R_SUBCATEGORY_3",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "SUB CATEGORY",
+                                        "appDesc": "SUB CATEGORY",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG BEEF",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG BEEF",
+                                                "appDesc": "HOT DOG BEEF",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG BEEF",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SUB CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SUBCATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG COCKTAIL",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG COCKTAIL",
+                                                "appDesc": "HOT DOG COCKTAIL",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG COCKTAIL",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SUB CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SUBCATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG MEAT",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG MEAT",
+                                                "appDesc": "HOT DOG MEAT",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG MEAT",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SUB CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SUBCATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG POULTRY",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG POULTRY",
+                                                "appDesc": "HOT DOG POULTRY",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG POULTRY",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SUB CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SUBCATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG VEGETARIAN",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG VEGETARIAN",
+                                                "appDesc": "HOT DOG VEGETARIAN",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SUBCATEGORY_3|CHARACTERISTIC|Products_QF|0|HOT DOG VEGETARIAN",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SUB CATEGORY"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SUBCATEGORY_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "R_SEGMENT_3",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "SEGMENT",
+                                        "appDesc": "SEGMENT",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG BEEF ECONOMY",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG BEEF ECONOMY",
+                                                "appDesc": "HOT DOG BEEF ECONOMY",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG BEEF ECONOMY",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG BEEF PREMIUM",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG BEEF PREMIUM",
+                                                "appDesc": "HOT DOG BEEF PREMIUM",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG BEEF PREMIUM",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG COCKTAIL",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG COCKTAIL",
+                                                "appDesc": "HOT DOG COCKTAIL",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG COCKTAIL",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG MEAT ECONOMY",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG MEAT ECONOMY",
+                                                "appDesc": "HOT DOG MEAT ECONOMY",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG MEAT ECONOMY",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG MEAT PREMIUM",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG MEAT PREMIUM",
+                                                "appDesc": "HOT DOG MEAT PREMIUM",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG MEAT PREMIUM",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG POULTRY",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG POULTRY",
+                                                "appDesc": "HOT DOG POULTRY",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG POULTRY",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "HOT DOG VEGETARIAN",
+                                                "type": "CHARACTERISTIC_VALUE",
+                                                "desc": "HOT DOG VEGETARIAN",
+                                                "appDesc": "HOT DOG VEGETARIAN",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "R_SEGMENT_3|CHARACTERISTIC|Products_QF|0|HOT DOG VEGETARIAN",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics",
+                                                    "SEGMENT"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR",
+                                                    "R_SEGMENT_3"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "CHARACTERISTIC"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "BRN_HIGH",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "BRAND HIGH",
+                                        "appDesc": "BRAND HIGH",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "BRN_HIGH|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [
+                                            "ALL"
+                                        ],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "ALL",
+                                                "type": "ALL",
+                                                "desc": "All of BRAND HIGH",
+                                                "appDesc": "All of BRAND HIGH",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "ALL|ALL|Products_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "SCAN_CORE_PRDC_DSC_LONG",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "LONG PRODUCT DESCRIPTION",
+                                        "appDesc": "LONG PRODUCT DESCRIPTION",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "SCAN_CORE_PRDC_DSC_LONG|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [
+                                            "ALL"
+                                        ],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "ALL",
+                                                "type": "ALL",
+                                                "desc": "All of LONG PRODUCT DESCRIPTION",
+                                                "appDesc": "All of LONG PRODUCT DESCRIPTION",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "ALL|ALL|Products_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "UPC_PRDC_CD",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "UPC",
+                                        "appDesc": "UPC",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "UPC_PRDC_CD|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [
+                                            "ALL"
+                                        ],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "ALL",
+                                                "type": "ALL",
+                                                "desc": "All of UPC",
+                                                "appDesc": "All of UPC",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "ALL|ALL|Products_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "C_17301504",
+                                        "type": "CHARACTERISTIC",
+                                        "desc": "PACK SIZE",
+                                        "appDesc": "PACK SIZE",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Products_QF",
+                                        "originalPromptId": "Products_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "C_17301504|CHARACTERISTIC|Products_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [
+                                            "ALL"
+                                        ],
+                                        "pathInfo": [
+                                            "Characteristics"
+                                        ],
+                                        "pathInfoIds": [
+                                            "CHR"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "ALL",
+                                                "type": "ALL",
+                                                "desc": "All of PACK SIZE",
+                                                "appDesc": "All of PACK SIZE",
+                                                "leaf": true,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Products_QF",
+                                                "originalPromptId": "Products_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "ALL|ALL|Products_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Characteristics"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "CHR"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW"
+                                                ],
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "promptId": "Product Share_QF",
+                "basePromptId": "Product Share_QF",
+                "originalPromptId": "Product Share_QF",
+                "promptName": "Product Share Basis",
+                "promptLabel": "Product Share Basis",
+                "virtualDim": null,
+                "hiddenPrompt": false,
+                "logicalDimId": "PRDC_SHR",
+                "logicalId": "PRDC_SHR",
+                "minSelections": 1,
+                "maxSelections": 1,
+                "valid": true,
+                "selections": [
+                    {
+                        "id": "0",
+                        "active": true,
+                        "items": [
+                            {
+                                "id": null,
+                                "invisible": false,
+                                "nodeId": "HRCH",
+                                "type": "VIEW",
+                                "desc": "Hierarchy",
+                                "appDesc": "Hierarchy",
+                                "leaf": false,
+                                "valid": true,
+                                "status": "true",
+                                "promptId": "Product Share_QF",
+                                "originalPromptId": "Product Share_QF",
+                                "showTotalsOnly": false,
+                                "addTotal": false,
+                                "baseUuid": "HRCH|VIEW|Product Share_QF|0",
+                                "upcCount": 0,
+                                "thruStart": null,
+                                "thruIndex": 0,
+                                "usedInLayout": null,
+                                "includeAllChildren": null,
+                                "functionType": [],
+                                "pathInfo": [],
+                                "pathInfoIds": [],
+                                "pathInfoTypes": [],
+                                "children": [
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "2605",
+                                        "type": "HIERARCHY",
+                                        "desc": "Dept/Cat/Sbct/Seg/Subseg",
+                                        "appDesc": "Dept/Cat/Sbct/Seg/Subseg",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Product Share_QF",
+                                        "originalPromptId": "Product Share_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "2605|HIERARCHY|Product Share_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Hierarchy"
+                                        ],
+                                        "pathInfoIds": [
+                                            "HRCH"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": true,
+                                                "nodeId": "2414",
+                                                "type": "HIERARCHY_LEVEL",
+                                                "desc": "Department",
+                                                "appDesc": "Department",
+                                                "leaf": false,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Product Share_QF",
+                                                "originalPromptId": "Product Share_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "2414|HIERARCHY_LEVEL|Product Share_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Hierarchy",
+                                                    "Dept/Cat/Sbct/Seg/Subseg"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "HRCH",
+                                                    "2605"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "HIERARCHY"
+                                                ],
+                                                "children": [
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "2415",
+                                                        "type": "HIERARCHY_LEVEL",
+                                                        "desc": "Category",
+                                                        "appDesc": "Category",
+                                                        "leaf": false,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Product Share_QF",
+                                                        "originalPromptId": "Product Share_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "2415|HIERARCHY_LEVEL|Product Share_QF|0",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Hierarchy",
+                                                            "Dept/Cat/Sbct/Seg/Subseg",
+                                                            "Department"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "HRCH",
+                                                            "2605",
+                                                            "2414"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "HIERARCHY",
+                                                            "HIERARCHY_LEVEL"
+                                                        ],
+                                                        "children": [
+                                                            {
+                                                                "id": null,
+                                                                "invisible": false,
+                                                                "nodeId": "HOT DOG",
+                                                                "type": "CHARACTERISTIC_VALUE",
+                                                                "desc": "HOT DOG",
+                                                                "appDesc": "HOT DOG",
+                                                                "leaf": true,
+                                                                "valid": true,
+                                                                "status": "true",
+                                                                "promptId": "Product Share_QF",
+                                                                "originalPromptId": "Product Share_QF",
+                                                                "showTotalsOnly": false,
+                                                                "addTotal": false,
+                                                                "baseUuid": "2415|HIERARCHY_LEVEL|Product Share_QF|0|HOT DOG",
+                                                                "upcCount": 0,
+                                                                "thruStart": null,
+                                                                "thruIndex": 0,
+                                                                "usedInLayout": null,
+                                                                "includeAllChildren": null,
+                                                                "functionType": [],
+                                                                "pathInfo": [
+                                                                    "Hierarchy",
+                                                                    "Dept/Cat/Sbct/Seg/Subseg",
+                                                                    "Department",
+                                                                    "Category"
+                                                                ],
+                                                                "pathInfoIds": [
+                                                                    "HRCH",
+                                                                    "2605",
+                                                                    "2414",
+                                                                    "2415"
+                                                                ],
+                                                                "pathInfoTypes": [
+                                                                    "VIEW",
+                                                                    "HIERARCHY",
+                                                                    "HIERARCHY_LEVEL",
+                                                                    "HIERARCHY_LEVEL"
+                                                                ],
+                                                                "children": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "promptId": "Periods_QF",
+                "basePromptId": "Periods_QF",
+                "originalPromptId": "Periods_QF",
+                "promptName": "Periods",
+                "promptLabel": "Periods",
+                "virtualDim": null,
+                "hiddenPrompt": false,
+                "logicalDimId": "PRD",
+                "logicalId": "PRD",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "valid": true,
+                "selections": [
+                    {
+                        "id": "0",
+                        "active": true,
+                        "items": [
+                            {
+                                "id": null,
+                                "invisible": false,
+                                "nodeId": "GRP",
+                                "type": "VIEW",
+                                "desc": "Groups (Folders)",
+                                "appDesc": "Groups (Folders)",
+                                "leaf": false,
+                                "valid": true,
+                                "status": "true",
+                                "promptId": "Periods_QF",
+                                "originalPromptId": "Periods_QF",
+                                "showTotalsOnly": false,
+                                "addTotal": false,
+                                "baseUuid": "GRP|VIEW|Periods_QF|0",
+                                "upcCount": 0,
+                                "thruStart": null,
+                                "thruIndex": 0,
+                                "usedInLayout": null,
+                                "includeAllChildren": null,
+                                "functionType": [],
+                                "pathInfo": [],
+                                "pathInfoIds": [],
+                                "pathInfoTypes": [],
+                                "children": [
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "Groups",
+                                        "type": "GROUP",
+                                        "desc": "Period Groups",
+                                        "appDesc": "Period Groups",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Periods_QF",
+                                        "originalPromptId": "Periods_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "Groups|GROUP|Periods_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Groups (Folders)"
+                                        ],
+                                        "pathInfoIds": [
+                                            "GRP"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "7936",
+                                                "type": "GROUP_LEVEL",
+                                                "desc": "Current Scan Periods",
+                                                "appDesc": "Current Scan Periods",
+                                                "leaf": false,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Periods_QF",
+                                                "originalPromptId": "Periods_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "7936|GROUP_LEVEL|Periods_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Groups (Folders)",
+                                                    "Period Groups"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "GRP",
+                                                    "Groups"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "GROUP"
+                                                ],
+                                                "children": [
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "20357004",
+                                                        "type": "GROUP_LEVEL_ITEM",
+                                                        "desc": "Latest 52 Weeks",
+                                                        "appDesc": "Latest 52 Weeks",
+                                                        "leaf": true,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Periods_QF",
+                                                        "originalPromptId": "Periods_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7936|GROUP_LEVEL|Periods_QF|0|20357004",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Period Groups",
+                                                            "Current Scan Periods"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7936"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": null
+                                                    },
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "20357001",
+                                                        "type": "GROUP_LEVEL_ITEM",
+                                                        "desc": "Latest 13 Weeks",
+                                                        "appDesc": "Latest 13 Weeks",
+                                                        "leaf": true,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Periods_QF",
+                                                        "originalPromptId": "Periods_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7936|GROUP_LEVEL|Periods_QF|0|20357001",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Period Groups",
+                                                            "Current Scan Periods"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7936"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": null
+                                                    },
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "20356941",
+                                                        "type": "GROUP_LEVEL_ITEM",
+                                                        "desc": "Latest 4 Weeks",
+                                                        "appDesc": "Latest 4 Weeks",
+                                                        "leaf": true,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Periods_QF",
+                                                        "originalPromptId": "Periods_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7936|GROUP_LEVEL|Periods_QF|0|20356941",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Period Groups",
+                                                            "Current Scan Periods"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7936"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": null
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "promptId": "Markets_QF",
+                "basePromptId": "Markets_QF",
+                "originalPromptId": "Markets_QF",
+                "promptName": "Markets",
+                "promptLabel": "Markets",
+                "virtualDim": null,
+                "hiddenPrompt": false,
+                "logicalDimId": "MRKT",
+                "logicalId": "MRKT",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "valid": true,
+                "selections": [
+                    {
+                        "id": "0",
+                        "active": true,
+                        "items": [
+                            {
+                                "id": null,
+                                "invisible": false,
+                                "nodeId": "GRP",
+                                "type": "VIEW",
+                                "desc": "Groups (Folders)",
+                                "appDesc": "Groups (Folders)",
+                                "leaf": false,
+                                "valid": true,
+                                "status": "true",
+                                "promptId": "Markets_QF",
+                                "originalPromptId": "Markets_QF",
+                                "showTotalsOnly": false,
+                                "addTotal": false,
+                                "baseUuid": "GRP|VIEW|Markets_QF|0",
+                                "upcCount": 0,
+                                "thruStart": null,
+                                "thruIndex": 0,
+                                "usedInLayout": null,
+                                "includeAllChildren": null,
+                                "functionType": [],
+                                "pathInfo": [],
+                                "pathInfoIds": [],
+                                "pathInfoTypes": [],
+                                "children": [
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "Groups",
+                                        "type": "GROUP",
+                                        "desc": "Market Groups",
+                                        "appDesc": "Market Groups",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Markets_QF",
+                                        "originalPromptId": "Markets_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "Groups|GROUP|Markets_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Groups (Folders)"
+                                        ],
+                                        "pathInfoIds": [
+                                            "GRP"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "7796",
+                                                "type": "GROUP_LEVEL",
+                                                "desc": "Total US",
+                                                "appDesc": "Total US",
+                                                "leaf": false,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Markets_QF",
+                                                "originalPromptId": "Markets_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "7796|GROUP_LEVEL|Markets_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Groups (Folders)",
+                                                    "Market Groups"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "GRP",
+                                                    "Groups"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "GROUP"
+                                                ],
+                                                "children": [
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "4378083",
+                                                        "type": "GROUP_LEVEL_ITEM",
+                                                        "desc": "Total US Food",
+                                                        "appDesc": "Total US Food",
+                                                        "leaf": true,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Markets_QF",
+                                                        "originalPromptId": "Markets_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7796|GROUP_LEVEL|Markets_QF|0|4378083",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Market Groups",
+                                                            "Total US"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7796"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": null
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "promptId": "Fact_QF",
+                "basePromptId": "Fact_QF",
+                "originalPromptId": "Fact_QF",
+                "promptName": "Facts",
+                "promptLabel": "Facts",
+                "virtualDim": null,
+                "hiddenPrompt": false,
+                "logicalDimId": "FCT",
+                "logicalId": "FCT",
+                "minSelections": 1,
+                "maxSelections": 0,
+                "valid": true,
+                "selections": [
+                    {
+                        "id": "0",
+                        "active": true,
+                        "items": [
+                            {
+                                "id": null,
+                                "invisible": false,
+                                "nodeId": "GRP",
+                                "type": "VIEW",
+                                "desc": "Groups (Folders)",
+                                "appDesc": "Groups (Folders)",
+                                "leaf": false,
+                                "valid": true,
+                                "status": "true",
+                                "promptId": "Fact_QF",
+                                "originalPromptId": "Fact_QF",
+                                "showTotalsOnly": false,
+                                "addTotal": false,
+                                "baseUuid": "GRP|VIEW|Fact_QF|0",
+                                "upcCount": 0,
+                                "thruStart": null,
+                                "thruIndex": 0,
+                                "usedInLayout": null,
+                                "includeAllChildren": null,
+                                "functionType": [],
+                                "pathInfo": [],
+                                "pathInfoIds": [],
+                                "pathInfoTypes": [],
+                                "children": [
+                                    {
+                                        "id": null,
+                                        "invisible": false,
+                                        "nodeId": "Groups",
+                                        "type": "GROUP",
+                                        "desc": "Fact Groups",
+                                        "appDesc": "Fact Groups",
+                                        "leaf": false,
+                                        "valid": true,
+                                        "status": "true",
+                                        "promptId": "Fact_QF",
+                                        "originalPromptId": "Fact_QF",
+                                        "showTotalsOnly": false,
+                                        "addTotal": false,
+                                        "baseUuid": "Groups|GROUP|Fact_QF|0",
+                                        "upcCount": 0,
+                                        "thruStart": null,
+                                        "thruIndex": 0,
+                                        "usedInLayout": null,
+                                        "includeAllChildren": null,
+                                        "functionType": [],
+                                        "pathInfo": [
+                                            "Groups (Folders)"
+                                        ],
+                                        "pathInfoIds": [
+                                            "GRP"
+                                        ],
+                                        "pathInfoTypes": [
+                                            "VIEW"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "7836",
+                                                "type": "GROUP_LEVEL",
+                                                "desc": "Sales Volume",
+                                                "appDesc": "Sales Volume",
+                                                "leaf": false,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Fact_QF",
+                                                "originalPromptId": "Fact_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "7836|GROUP_LEVEL|Fact_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Groups (Folders)",
+                                                    "Fact Groups"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "GRP",
+                                                    "Groups"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "GROUP"
+                                                ],
+                                                "children": [
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "7848",
+                                                        "type": "GROUP_LEVEL",
+                                                        "desc": "Dollars",
+                                                        "appDesc": "Dollars",
+                                                        "leaf": false,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Fact_QF",
+                                                        "originalPromptId": "Fact_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7848|GROUP_LEVEL|Fact_QF|0",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Fact Groups",
+                                                            "Sales Volume"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7836"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": [
+                                                            {
+                                                                "id": null,
+                                                                "invisible": false,
+                                                                "nodeId": "DOL",
+                                                                "type": "GROUP_LEVEL_ITEM",
+                                                                "desc": "$",
+                                                                "appDesc": "$",
+                                                                "leaf": true,
+                                                                "valid": true,
+                                                                "status": "true",
+                                                                "promptId": "Fact_QF",
+                                                                "originalPromptId": "Fact_QF",
+                                                                "showTotalsOnly": false,
+                                                                "addTotal": false,
+                                                                "baseUuid": "7848|GROUP_LEVEL|Fact_QF|0|DOL",
+                                                                "upcCount": 0,
+                                                                "thruStart": null,
+                                                                "thruIndex": 0,
+                                                                "usedInLayout": null,
+                                                                "includeAllChildren": null,
+                                                                "functionType": [],
+                                                                "pathInfo": [
+                                                                    "Groups (Folders)",
+                                                                    "Fact Groups",
+                                                                    "Sales Volume",
+                                                                    "Dollars"
+                                                                ],
+                                                                "pathInfoIds": [
+                                                                    "GRP",
+                                                                    "Groups",
+                                                                    "7836",
+                                                                    "7848"
+                                                                ],
+                                                                "pathInfoTypes": [
+                                                                    "VIEW",
+                                                                    "GROUP",
+                                                                    "GROUP_LEVEL",
+                                                                    "GROUP_LEVEL"
+                                                                ],
+                                                                "children": null
+                                                            },
+                                                            {
+                                                                "id": null,
+                                                                "invisible": false,
+                                                                "nodeId": "DOL_PCT_CHG",
+                                                                "type": "GROUP_LEVEL_ITEM",
+                                                                "desc": "$ % Chg YA",
+                                                                "appDesc": "$ % Chg YA",
+                                                                "leaf": true,
+                                                                "valid": true,
+                                                                "status": "true",
+                                                                "promptId": "Fact_QF",
+                                                                "originalPromptId": "Fact_QF",
+                                                                "showTotalsOnly": false,
+                                                                "addTotal": false,
+                                                                "baseUuid": "7848|GROUP_LEVEL|Fact_QF|0|DOL_PCT_CHG",
+                                                                "upcCount": 0,
+                                                                "thruStart": null,
+                                                                "thruIndex": 0,
+                                                                "usedInLayout": null,
+                                                                "includeAllChildren": null,
+                                                                "functionType": [],
+                                                                "pathInfo": [
+                                                                    "Groups (Folders)",
+                                                                    "Fact Groups",
+                                                                    "Sales Volume",
+                                                                    "Dollars"
+                                                                ],
+                                                                "pathInfoIds": [
+                                                                    "GRP",
+                                                                    "Groups",
+                                                                    "7836",
+                                                                    "7848"
+                                                                ],
+                                                                "pathInfoTypes": [
+                                                                    "VIEW",
+                                                                    "GROUP",
+                                                                    "GROUP_LEVEL",
+                                                                    "GROUP_LEVEL"
+                                                                ],
+                                                                "children": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": null,
+                                                "invisible": false,
+                                                "nodeId": "7844",
+                                                "type": "GROUP_LEVEL",
+                                                "desc": "Dollar Share",
+                                                "appDesc": "Dollar Share",
+                                                "leaf": false,
+                                                "valid": true,
+                                                "status": "true",
+                                                "promptId": "Fact_QF",
+                                                "originalPromptId": "Fact_QF",
+                                                "showTotalsOnly": false,
+                                                "addTotal": false,
+                                                "baseUuid": "7844|GROUP_LEVEL|Fact_QF|0",
+                                                "upcCount": 0,
+                                                "thruStart": null,
+                                                "thruIndex": 0,
+                                                "usedInLayout": null,
+                                                "includeAllChildren": null,
+                                                "functionType": [],
+                                                "pathInfo": [
+                                                    "Groups (Folders)",
+                                                    "Fact Groups"
+                                                ],
+                                                "pathInfoIds": [
+                                                    "GRP",
+                                                    "Groups"
+                                                ],
+                                                "pathInfoTypes": [
+                                                    "VIEW",
+                                                    "GROUP"
+                                                ],
+                                                "children": [
+                                                    {
+                                                        "id": null,
+                                                        "invisible": false,
+                                                        "nodeId": "7912",
+                                                        "type": "GROUP_LEVEL",
+                                                        "desc": "Prompt",
+                                                        "appDesc": "Prompt",
+                                                        "leaf": false,
+                                                        "valid": true,
+                                                        "status": "true",
+                                                        "promptId": "Fact_QF",
+                                                        "originalPromptId": "Fact_QF",
+                                                        "showTotalsOnly": false,
+                                                        "addTotal": false,
+                                                        "baseUuid": "7912|GROUP_LEVEL|Fact_QF|0",
+                                                        "upcCount": 0,
+                                                        "thruStart": null,
+                                                        "thruIndex": 0,
+                                                        "usedInLayout": null,
+                                                        "includeAllChildren": null,
+                                                        "functionType": [],
+                                                        "pathInfo": [
+                                                            "Groups (Folders)",
+                                                            "Fact Groups",
+                                                            "Dollar Share"
+                                                        ],
+                                                        "pathInfoIds": [
+                                                            "GRP",
+                                                            "Groups",
+                                                            "7844"
+                                                        ],
+                                                        "pathInfoTypes": [
+                                                            "VIEW",
+                                                            "GROUP",
+                                                            "GROUP_LEVEL"
+                                                        ],
+                                                        "children": [
+                                                            {
+                                                                "id": null,
+                                                                "invisible": false,
+                                                                "nodeId": "DOL_SHR_PROMPT",
+                                                                "type": "GROUP_LEVEL_ITEM",
+                                                                "desc": "$ Shr - Prompt",
+                                                                "appDesc": "$ Shr - Prompt",
+                                                                "leaf": true,
+                                                                "valid": true,
+                                                                "status": "true",
+                                                                "promptId": "Fact_QF",
+                                                                "originalPromptId": "Fact_QF",
+                                                                "showTotalsOnly": false,
+                                                                "addTotal": false,
+                                                                "baseUuid": "7912|GROUP_LEVEL|Fact_QF|0|DOL_SHR_PROMPT",
+                                                                "upcCount": 0,
+                                                                "thruStart": null,
+                                                                "thruIndex": 0,
+                                                                "usedInLayout": null,
+                                                                "includeAllChildren": null,
+                                                                "functionType": [],
+                                                                "pathInfo": [
+                                                                    "Groups (Folders)",
+                                                                    "Fact Groups",
+                                                                    "Dollar Share",
+                                                                    "Prompt"
+                                                                ],
+                                                                "pathInfoIds": [
+                                                                    "GRP",
+                                                                    "Groups",
+                                                                    "7844",
+                                                                    "7912"
+                                                                ],
+                                                                "pathInfoTypes": [
+                                                                    "VIEW",
+                                                                    "GROUP",
+                                                                    "GROUP_LEVEL",
+                                                                    "GROUP_LEVEL"
+                                                                ],
+                                                                "children": null
+                                                            },
+                                                            {
+                                                                "id": null,
+                                                                "invisible": false,
+                                                                "nodeId": "DOL_SHR_PROMPT_PT_CHG",
+                                                                "type": "GROUP_LEVEL_ITEM",
+                                                                "desc": "$ Shr CYA - Prompt",
+                                                                "appDesc": "$ Shr CYA - Prompt",
+                                                                "leaf": true,
+                                                                "valid": true,
+                                                                "status": "true",
+                                                                "promptId": "Fact_QF",
+                                                                "originalPromptId": "Fact_QF",
+                                                                "showTotalsOnly": false,
+                                                                "addTotal": false,
+                                                                "baseUuid": "7912|GROUP_LEVEL|Fact_QF|0|DOL_SHR_PROMPT_PT_CHG",
+                                                                "upcCount": 0,
+                                                                "thruStart": null,
+                                                                "thruIndex": 0,
+                                                                "usedInLayout": null,
+                                                                "includeAllChildren": null,
+                                                                "functionType": [],
+                                                                "pathInfo": [
+                                                                    "Groups (Folders)",
+                                                                    "Fact Groups",
+                                                                    "Dollar Share",
+                                                                    "Prompt"
+                                                                ],
+                                                                "pathInfoIds": [
+                                                                    "GRP",
+                                                                    "Groups",
+                                                                    "7844",
+                                                                    "7912"
+                                                                ],
+                                                                "pathInfoTypes": [
+                                                                    "VIEW",
+                                                                    "GROUP",
+                                                                    "GROUP_LEVEL",
+                                                                    "GROUP_LEVEL"
+                                                                ],
+                                                                "children": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "userId": "Paul sauve",
+    "uid": "ce2e54d3078a49bd2601e360b2a290a0",
+    "locale": "en_US",
+    "userName": "paul.sauve@nielsen.com"
+}
