@@ -1,7 +1,8 @@
 var path = require('path');
-var fs = require('fs');
+var fs = require('graceful-fs');
 var oboe = require('oboe');
 var q = require('q');
+
 
 var jsonDir = path.join(__dirname,'data/RI/');
 var id = "4378083";
@@ -27,7 +28,9 @@ function findVals(file, id) {
   // console.log("function one");
   console.log(file);
   console.time("findVals");
-  oboe(fs.createReadStream(jsonDir + file)).on('node',
+  oboe(fs.createReadStream(jsonDir + file, {
+    autoClose: true
+  })).on('node',
       {
         'selections': function(scheme){
            //console.log(scheme);
@@ -37,13 +40,16 @@ function findVals(file, id) {
               console.log(item);
               console.log('FILE: ' + file);
               console.dir(path);
+              console.timeEnd("findVals");
+
               // console.log('ANCESTORS_0: ' + ancestors[0]);
               // console.dir('ANCESTORS: ' + ancestors);
             }
         }
-      }).on('done', function (json) {
-        console.log('request completed');
-        console.timeEnd("findVals");
+      // }).on('done', function (json) {
+      //   console.log('request completed');
+      //   console.timeEnd("findVals");
+
       });
       deferred.resolve();
 

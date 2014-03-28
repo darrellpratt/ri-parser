@@ -5,10 +5,11 @@
     "private": false,
     "dependencies": {
         "oboe": "*",
-        "Q": "*",
+        "q": "*",
         "underscore": "*",
         "promise": "*",
         "JSONStream": "*",
-        "event-stream": "*"
+        "event-stream": "*",
+        "amqp": "*"
     }
 }
