@@ -4,6 +4,9 @@ var fs = require('graceful-fs');
 var oboe = require('oboe');
 var q = require('q');
 
+var jsonDir = path.join(__dirname,'data/RI/');
+var id = "4378083";
+
 var connection = amqp.createConnection({host: 'localhost'});
 
 connection.on('ready', function(){
@@ -15,6 +18,7 @@ connection.on('ready', function(){
         queue.subscribe({ack: true, prefetchCount: 1}, function(msg){
             var body = msg.data.toString('utf-8');
             console.log(" [x] Received %s", body);
+            findVals(body, id);
             setTimeout(function(){
                 console.log(" [x] Done");
                 queue.shift(); // basic_ack equivalent
