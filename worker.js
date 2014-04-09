@@ -78,7 +78,7 @@ function findVals(file) {
     				console.log('>>' +  ch.nodeType);
     				console.log(item.nodeId);
     				console.log('>>' + ch.oldId);
-		        if (item.type === ch['nodeType'] && item.nodeId === ch['oldId']) {
+		        if (item.type === ch['nodeType']) {
 		            // console.log(item);
 		            console.log('===================================HIT: ' + file + ' ============= ' + ch['oldId']);
 		            // console.log("FOUND: " + id);
