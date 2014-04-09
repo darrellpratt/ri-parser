@@ -10,6 +10,7 @@
         "promise": "*",
         "JSONStream": "*",
         "event-stream": "*",
-        "amqp": "*"
+        "amqp": "*",
+	"couchbase": "*"
     }
 }

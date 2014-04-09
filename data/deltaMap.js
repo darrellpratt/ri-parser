@@ -1,0 +1,43 @@
+var JSON = require('JSON');
+
+var deltaMap = JSON.parse('{"id": "NACAPPPI_2009/05/01",
+  "cycleDate": "2009/05/01",
+  "databaseName": "NACAPPPI",
+  "deltas": [
+    {
+      "dimension": "MRKT",
+      "newId": "4378083_MCM",
+      "oldId": "4378083",
+      "type": "GROUP_LEVEL_ITEM",
+      "changedType": "GROUP_LEVEL_ITEM_ID",
+      "newValue": null,
+      "oldValue": null,
+      "dimChrAbr": null,
+      "operation": "UPDATE"
+    },
+    {
+      "dimension": "MRKT",
+      "newId": "4378096_MCM",
+      "oldId": "4378096",
+      "type": "GROUP_LEVEL_ITEM",
+      "changedType": "GROUP_LEVEL_ITEM_ID",
+      "newValue": null,
+      "oldValue": null,
+      "dimChrAbr": null,
+      "operation": "UPDATE"
+    },
+    {
+      "dimension": "MRKT",
+      "newId": "4378897_MCM",
+      "oldId": "4378897",
+      "type": "GROUP_LEVEL_ITEM",
+      "changedType": "GROUP_LEVEL_ITEM_ID",
+      "newValue": null,
+      "oldValue": null,
+      "dimChrAbr": null,
+      "operation": "UPDATE"
+    }
+  ]
+}');
+
+
