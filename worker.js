@@ -71,22 +71,26 @@ function findVals(file) {
   	.on('node', 
   		{
   			'{nodeId type}': function(item, path, ancestors) {
-  				// console.log('=====================found node');
-  				console.log('len' + deltaList.length);
+  				
+  				
     			_.each(deltaList, function(ch) {
-    				console.log(item);
-    				console.log('>>' +  ch.nodeType);
-    				console.log(item.nodeId);
-    				console.log('>>' + ch.oldId);
-		        if (item.type === ch['nodeType']) {
-		            // console.log(item);
-		            console.log('===================================HIT: ' + file + ' ============= ' + ch['oldId']);
-		            // console.log("FOUND: " + id);
-		            console.dir(path);
-		            console.timeEnd("findVals");
+    				// console.log(item);
+    				// console.log('>>' +  ch.nodeType);
+    				// console.log(item.nodeId);
+    				// console.log('>>' + ch.oldId);
+    				// console.log(item.type + ":" + ch.nodeType + ":" + item.nodeId + ":" + ch.oldId);
+		        if (item.type === ch.nodeType) {
+		        		if (item.nodeId === ch.oldId) {
+			            // console.log(item);
+			            console.log('===================================HIT: ' + file + ' ============= ' + ch.oldId);
+			            // console.log("FOUND: " + id);
+			            // console.dir(path);
+			            console.timeEnd("findVals");
+			            this.abort();
+		          }
 		        }
     			});
-    			console.log('done with node');
+    			
   		}}
   		).on('done', function (json) {
         console.log('request completed');
