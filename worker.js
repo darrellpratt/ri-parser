@@ -6,17 +6,21 @@ var q = require('q');
 var couchbase = require('couchbase');
 var JSON = require('JSON');
 var _ = require('underscore');
+var JSONStream = require('JSONStream');
+var es = require('event-stream');
 
 // where is data
 var jsonDir = path.join(__dirname,'data/RI/');
 
 // Load up the delta file into map of objects for checking later
-var deltaMap = [];
+var deltaList = new Array();
+var deltaDimArray = new Array();
+
 console.time('delta');
 var _deltaJson = require('./data/NACNLSPI_20090501_500.json');
 // oboe('./data/NACNLSPI_20090501_500.json').node('deltas.*', function(item) {
 			// if (item.operation.toLowerCase() === 'update') {
-_.each(_deltaJson.deltas, function(d) {
+_.each(_deltaJson.deltas, function(item) {
 	var changeItem = new Object(); 
 	changeItem['dim'] = item.dimension;
 	changeItem['nodeType'] = item.type;
@@ -26,20 +30,12 @@ _.each(_deltaJson.deltas, function(d) {
 	changeItem['newValue'] = item.newValue;
 	changeItem['oldValue'] = item.oldValue;
 	changeItem['operation'] = item.operation;
-	deltaMap.unshit(changeItem);
+	deltaList.unshift(changeItem);
+	deltaDimArray.unshift(item.dimension);
 	console.log(changeItem);
-})
-
-
-console.timeEnd('delta');
-console.log('delta');
-console.log(deltaMap);
-console.log('/delta');
-
-_.each(deltaMap, function(ch) {
-	console.log(ch);
-  
 });
+
+console.log(_.uniq(deltaDimArray));
 
 
 // read from queue for items
@@ -70,14 +66,18 @@ function findVals(file) {
   // console.log("function one");
   console.log(file);
   console.time("findVals");
+
   oboe(fs.createReadStream(jsonDir + file, {autoClose: true} ) )
   	.on('node', 
   		{
   			'{nodeId type}': function(item, path, ancestors) {
   				// console.log('=====================found node');
-  				// console.log('len' + jsonMap.length);
-    			_.each(jsonMap, function(ch) {
-    				console.log(ch);
+  				console.log('len' + deltaList.length);
+    			_.each(deltaList, function(ch) {
+    				console.log(item);
+    				console.log('>>' +  ch.nodeType);
+    				console.log(item.nodeId);
+    				console.log('>>' + ch.oldId);
 		        if (item.type === ch['nodeType'] && item.nodeId === ch['oldId']) {
 		            // console.log(item);
 		            console.log('===================================HIT: ' + file + ' ============= ' + ch['oldId']);
@@ -86,6 +86,7 @@ function findVals(file) {
 		            console.timeEnd("findVals");
 		        }
     			});
+    			console.log('done with node');
   		}}
   		).on('done', function (json) {
         console.log('request completed');
@@ -93,10 +94,21 @@ function findVals(file) {
         // console.log(promptMap);
         console.log(json);
       });
+	
+	// var stream = fs.createReadStream(jsonDir + file, {encoding: 'utf8', autoClose: true}),
+ //  parser = JSONStream.parse();
 
-      
-      deferred.resolve();
+	// stream.pipe(parser);
+	// parser.on('selections', function(data) {
+	// 	console.log('==========================================================');
+	//   console.log('received:', data);
+	//   console.log('==========================================================');
+	// });
 
+	console.log('==========================================================');
+
+	// q      
+  deferred.resolve();
 
   return deferred.promise;
 };
