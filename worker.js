@@ -1,46 +1,60 @@
-var amqp = require('amqp');
-var path = require('path');
-var fs = require('graceful-fs');
-var oboe = require('oboe');
-var q = require('q');
-var couchbase = require('couchbase');
-var JSON = require('JSON');
-var _ = require('underscore');
-var JSONStream = require('JSONStream');
-var es = require('event-stream');
+var amqp = require('amqp'),
+  path = require('path'),
+  fs = require('graceful-fs'),
+  oboe = require('oboe'),
+  q = require('q'),
+  JSON = require('JSON'),
+  _ = require('underscore'),
+  JSONStream = require('JSONStream'),
+  es = require('event-stream')
+  chalk = require('chalk');
 
 // where is data
 var jsonDir = path.join(__dirname,'data/RI/');
 
-// Load up the delta file into map of objects for checking later
-var deltaList = new Array();
-var deltaDimArray = new Array();
+// counters
+var hitCount = 0;
+var missCount = 0;
 
-console.time('delta');
+// Load up the delta file into map of objects for checking later
+var deltaStruct = new Object(); // would like to key by dim here eventually
+var deltaList = new Array();
+
+
+var deltaDimArray = new Array();
+var uniqDeltaDimArray = new Array();
+
 var _deltaJson = require('./data/NACNLSPI_20090501_500.json');
-// oboe('./data/NACNLSPI_20090501_500.json').node('deltas.*', function(item) {
-			// if (item.operation.toLowerCase() === 'update') {
+
 _.each(_deltaJson.deltas, function(item) {
-	var changeItem = new Object(); 
-	changeItem['dim'] = item.dimension;
-	changeItem['nodeType'] = item.type;
-	changeItem['changedType'] = item.changedType;
-	changeItem['newId'] = item.newId;
-	changeItem['oldId'] = item.oldId;
-	changeItem['newValue'] = item.newValue;
-	changeItem['oldValue'] = item.oldValue;
-	changeItem['operation'] = item.operation;
-	deltaList.unshift(changeItem);
+  var changeItem = {
+    'dim': item.dimension,
+    'type': item.type,
+    'changedType': item.changedType,
+    'newId': item.newId,
+    'oldId': item.oldId,
+    'newValue': item.newValue,
+    'oldValue': item.oldValue,
+    'operation': item.operation
+  };
+  // console.log(changeItem.changedType);
+  if (_.isUndefined(deltaStruct[changeItem.type])) {
+    deltaStruct[changeItem.type] = new Array();
+  };
+  deltaStruct[changeItem.type].unshift(changeItem);
+  // console.log(deltaStruct);
+	// deltaList.unshift(changeItem);
 	deltaDimArray.unshift(item.dimension);
-	console.log(changeItem);
+	// console.log(changeItem);
 });
 
-console.log(_.uniq(deltaDimArray));
-
+// keep track of actual dims in the change set delta, used later in checks
+uniqDeltaDimArray = _.uniq(deltaDimArray);
+console.log(uniqDeltaDimArray);
+console.log(deltaStruct);
 
 // read from queue for items
 var connection = amqp.createConnection({host: 'localhost'});
-
 connection.on('ready', function(){
     connection.queue('task_queue', {autoDelete: false,
                                     durable: true}, function(queue){
@@ -49,12 +63,13 @@ connection.on('ready', function(){
 
         queue.subscribe({ack: true, prefetchCount: 1}, function(msg){
             var body = msg.data.toString('utf-8');
-            console.log(" [x] Received %s", body);
+            console.log(' [x] Received %s', body);
             findVals(body);
             setTimeout(function(){
-                console.log(" [x] Done");
+                console.log(' [x] Done');
+                console.log('Hits: ' + hitCount + ' misses: ' + missCount);
                 queue.shift(); // basic_ack equivalent
-            }, (body.split('.').length - 1) * 500);
+            }, (body.split('.').length - 1) * 10);
         });
     });
 });
@@ -63,59 +78,56 @@ connection.on('ready', function(){
 function findVals(file) {
   var deferred = q.defer();
   var promptMap = new Object();
-  // console.log("function one");
-  console.log(file);
-  console.time("findVals");
+  logging(file);
 
+
+  var foundChange = false;
   oboe(fs.createReadStream(jsonDir + file, {autoClose: true} ) )
-  	.on('node', 
+  	.on('node',
   		{
   			'{nodeId type}': function(item, path, ancestors) {
-  				
-  				
-    			_.each(deltaList, function(ch) {
-    				// console.log(item);
-    				// console.log('>>' +  ch.nodeType);
-    				// console.log(item.nodeId);
-    				// console.log('>>' + ch.oldId);
-    				// console.log(item.type + ":" + ch.nodeType + ":" + item.nodeId + ":" + ch.oldId);
-		        if (item.type === ch.nodeType) {
-		        		if (item.nodeId === ch.oldId) {
+          // console.log(item.type);
+
+    			_.each(deltaStruct[item.type], function(change) {
+    				// console.log(item.type + ":" + change.nodeType + ":" + item.nodeId + ":" + change.oldId);
+		        if (item.type === change.type) {
+              // TODO: check for which type of val changed here
+		        		if (item.nodeId === change.oldId) {
 			            // console.log(item);
-			            console.log('===================================HIT: ' + file + ' ============= ' + ch.oldId);
-			            // console.log("FOUND: " + id);
-			            // console.dir(path);
-			            console.timeEnd("findVals");
+			            console.log(chalk.blue('================HIT: ' + file + ' ============= ' + change.oldId));
+                  foundChange = true;
 			            this.abort();
 		          }
 		        }
     			});
-    			
+
   		}}
   		).on('done', function (json) {
         console.log('request completed');
-        console.timeEnd("findVals");
-        // console.log(promptMap);
-        console.log(json);
+        console.log(foundChange);
+        if (foundChange) {
+          // console.log(json);
+          console.log(chalk.bgCyan(file + '+++++++++++++++++++++++HITHITHIT'));
+          hitCount++;
+        } else {
+          console.log(chalk.bgRed(file + '***********************NO HIT'));
+          missCount++;
+        };
       });
-	
-	// var stream = fs.createReadStream(jsonDir + file, {encoding: 'utf8', autoClose: true}),
- //  parser = JSONStream.parse();
 
-	// stream.pipe(parser);
-	// parser.on('selections', function(data) {
-	// 	console.log('==========================================================');
-	//   console.log('received:', data);
-	//   console.log('==========================================================');
-	// });
-
-	console.log('==========================================================');
-
-	// q      
+	// q
   deferred.resolve();
 
   return deferred.promise;
 };
+
+function logging(tick) {
+  console.log();console.log();
+  console.log(chalk.green('--------------------------------------------------'));
+  console.log(chalk.blue(tick));
+  console.log(chalk.green('--------------------------------------------------'));
+  console.log();console.log();
+}
 
 
 // {
