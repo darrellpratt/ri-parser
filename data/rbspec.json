@@ -1,0 +1,592 @@
+{
+  "id": "0001FA670F9F4C66A69E46D61C0E270B",
+  "name": "Report Name",
+  "title": "Nielsen Quick Facts",
+  "portfolioId": "12340A4BBE124A04B32CA7A2526793EE",
+  "datascopeId": "4458B10F6BD94F66ABDE63F6C68A4FF4",
+  "objectType": "FAVORITE",
+  "specs": [
+    {
+      "id": "spec-1",
+      "type": "",
+      "dataSelections": [
+        {
+          "id": null,
+          "invisible": null,
+          "nodeId": null,
+          "type": null,
+          "desc": "Facts",
+          "appDesc": null,
+          "leaf": null,
+          "valid": true,
+          "status": null,
+          "promptId": "96769bf0-a83d-434e-be8f-24097bb9a9f5",
+          "originalPromptId": null,
+          "showTotalsOnly": null,
+          "addTotal": null,
+          "baseUuid": "Fact_QF",
+          "upcCount": 0,
+          "thruStart": null,
+          "thruIndex": 0,
+          "usedInLayout": false,
+          "includeAllChildren": null,
+          "functionType": null,
+          "pathInfo": null,
+          "pathInfoIds": null,
+          "pathInfoTypes": null,
+          "children": [
+            {
+              "id": null,
+              "invisible": null,
+              "nodeId": "GRP",
+              "type": "VIEW",
+              "desc": "Groups (folders)",
+              "appDesc": null,
+              "leaf": null,
+              "valid": true,
+              "status": "",
+              "promptId": "Fact_QF",
+              "originalPromptId": null,
+              "showTotalsOnly": false,
+              "addTotal": null,
+              "baseUuid": "GRP|VIEW|Fact_QF|0",
+              "upcCount": 0,
+              "thruStart": null,
+              "thruIndex": 0,
+              "usedInLayout": false,
+              "includeAllChildren": null,
+              "functionType": null,
+              "pathInfo": [],
+              "pathInfoIds": [],
+              "pathInfoTypes": [],
+              "children": [
+                {
+                  "id": null,
+                  "invisible": null,
+                  "nodeId": "12700",
+                  "type": "GROUP_LEVEL",
+                  "desc": "Dollars",
+                  "appDesc": null,
+                  "leaf": null,
+                  "valid": true,
+                  "status": "",
+                  "promptId": "Fact_QF",
+                  "originalPromptId": null,
+                  "showTotalsOnly": false,
+                  "addTotal": null,
+                  "baseUuid": "12700|GROUP_LEVEL|Fact_QF|0",
+                  "upcCount": 0,
+                  "thruStart": null,
+                  "thruIndex": 0,
+                  "usedInLayout": false,
+                  "includeAllChildren": false,
+                  "functionType": null,
+                  "pathInfo": [
+                    "Groups (folders)",
+                    "Fact Groups",
+                    "Sales Volume"
+                  ],
+                  "pathInfoIds": [
+                    "GRP",
+                    "12688",
+                    "12689"
+                  ],
+                  "pathInfoTypes": [
+                    "VIEW",
+                    "GROUP",
+                    "GROUP_LEVEL"
+                  ],
+                  "children": [
+                    {
+                      "id": null,
+                      "invisible": null,
+                      "nodeId": "DOL_YAGO",
+                      "type": "GROUP_LEVEL_ITEM",
+                      "desc": "$ YA",
+                      "appDesc": null,
+                      "leaf": true,
+                      "valid": true,
+                      "status": "",
+                      "promptId": "Fact_QF",
+                      "originalPromptId": null,
+                      "showTotalsOnly": false,
+                      "addTotal": null,
+                      "baseUuid": "12700|GROUP_LEVEL|12700|0|DOL_YAGO",
+                      "upcCount": 0,
+                      "thruStart": null,
+                      "thruIndex": 0,
+                      "usedInLayout": true,
+                      "includeAllChildren": null,
+                      "functionType": null,
+                      "pathInfo": [
+                        "Groups (folders)",
+                        "Fact Groups",
+                        "Sales Volume",
+                        "Dollars"
+                      ],
+                      "pathInfoIds": [
+                        "GRP",
+                        "12688",
+                        "12689",
+                        "12700"
+                      ],
+                      "pathInfoTypes": [
+                        "VIEW",
+                        "GROUP",
+                        "GROUP_LEVEL",
+                        "GROUP_LEVEL"
+                      ],
+                      "children": []
+                    },
+                    {
+                      "id": null,
+                      "invisible": null,
+                      "nodeId": "DOL_CHG_YAGO",
+                      "type": "GROUP_LEVEL_ITEM",
+                      "desc": "$ CYA",
+                      "appDesc": null,
+                      "leaf": true,
+                      "valid": true,
+                      "status": "",
+                      "promptId": "Fact_QF",
+                      "originalPromptId": null,
+                      "showTotalsOnly": false,
+                      "addTotal": null,
+                      "baseUuid": "12700|GROUP_LEVEL|12700|0|DOL_CHG_YAGO",
+                      "upcCount": 0,
+                      "thruStart": null,
+                      "thruIndex": 0,
+                      "usedInLayout": true,
+                      "includeAllChildren": null,
+                      "functionType": null,
+                      "pathInfo": [
+                        "Groups (folders)",
+                        "Fact Groups",
+                        "Sales Volume",
+                        "Dollars"
+                      ],
+                      "pathInfoIds": [
+                        "GRP",
+                        "12688",
+                        "12689",
+                        "12700"
+                      ],
+                      "pathInfoTypes": [
+                        "VIEW",
+                        "GROUP",
+                        "GROUP_LEVEL",
+                        "GROUP_LEVEL"
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "4b32e142-2d21-44ff-9f07-e458eb0704d1",
+          "type": "line",
+          "name": "Line Chart-1",
+          "specId": "spec-1",
+          "gridStyle": "",
+          "mergeCells": true,
+          "showTotals": true,
+          "showRightAxis": false,
+          "title": "RB Title",
+          "subtitle": null,
+          "subTotal": false,
+          "grandTotal": false,
+          "showBorder": true
+        }
+      ],
+      "containers": [
+        {
+          "id": "b6eec3bd-a6dd-4472-bd92-8d676a097352",
+          "type": "simple",
+          "positionX": 10,
+          "positionY": 10,
+          "width": 75,
+          "height": 85,
+          "pageId": "",
+          "objectId": "4b32e142-2d21-44ff-9f07-e458eb0704d1",
+          "connectToId": "",
+          "children": [],
+          "pages": [],
+          "order": 1
+        }
+      ],
+      "objectLayouts": [
+        {
+          "id": "6c2df666-33ae-45e9-ae72-0a244cee4ba5",
+          "type": "",
+          "name": "",
+          "objectId": "4b32e142-2d21-44ff-9f07-e458eb0704d1",
+          "panes": [
+            {
+              "type": "Conditions",
+              "nests": []
+            },
+            {
+              "type": "Facts y1",
+              "nests": [
+                {
+                  "id": "bf28b786-e9ad-403d-8422-77c94277e8f0",
+                  "selections": [
+                    {
+                      "id": "d693cf95-4db1-49a7-9c25-ab2ffe410d4f",
+                      "name": "Cumulative $ YA",
+                      "groupHeaderName": null,
+                      "nodeId": "",
+                      "baseUuid": "84629ae8-09f7-475a-908c-62492b15ce96",
+                      "baseType": "PERCENTILE",
+                      "promptId": "Percentiles",
+                      "promptName": "Expressions",
+                      "dimension": null,
+                      "dzoType": "PCTL_I",
+                      "index": null
+                    },
+                    {
+                      "id": "45740e5f-0f04-4e4e-93d8-c41a7aa85ded",
+                      "name": "$ YA",
+                      "groupHeaderName": null,
+                      "nodeId": "DOL_YAGO",
+                      "baseUuid": "12700|GROUP_LEVEL|12700|0|DOL_YAGO",
+                      "baseType": "FACT",
+                      "promptId": "Fact_QF",
+                      "promptName": "Facts",
+                      "dimension": "FCT",
+                      "dzoType": "FACT_I",
+                      "index": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Facts y2",
+              "nests": []
+            },
+            {
+              "type": "Categories",
+              "nests": [
+                {
+                  "id": "c702de40-6fca-4074-80b7-994ad29fb174",
+                  "selections": [
+                    {
+                      "id": "0d515125-7829-4024-bbe8-b36d1e54e9e2",
+                      "name": "Markets",
+                      "groupHeaderName": null,
+                      "nodeId": "",
+                      "baseUuid": "Markets",
+                      "baseType": "PROMPT",
+                      "promptId": "Markets",
+                      "promptName": "Markets",
+                      "dimension": "MRKT",
+                      "dzoType": "DIM_P",
+                      "index": null
+                    }
+                  ]
+                }
+             ]
+            },
+            {
+              "type": "Series",
+              "nests": [
+                {
+                  "id": "8c3e5863-8fc7-47df-9cbd-0613ea9f6ade",
+                  "selections": [
+                    {
+                      "id": "dcb2382a-f84d-4073-ad40-bd987b5b0e84",
+                      "name": "Periods",
+                      "groupHeaderName": null,
+                      "nodeId": "",
+                      "baseUuid": "Periods",
+                      "baseType": "PROMPT",
+                      "promptId": "Periods",
+                      "promptName": "Periods",
+                      "dimension": "PRD",
+                      "dzoType": "DIM_P",
+                      "index": null
+                    }
+                  ]
+                },
+                {
+                  "id": "d8155adc-f099-487a-9baf-3f3b49721dee",
+                  "selections": [
+                    {
+                      "id": "12006831-e703-43c4-923b-671ffe1a8ffa",
+                      "name": "Products",
+                      "groupHeaderName": null,
+                      "nodeId": "",
+                      "baseUuid": "Products",
+                      "baseType": "PROMPT",
+                      "promptId": "Products",
+                      "promptName": "Products",
+                      "dimension": "PRDC",
+                      "dzoType": "DIM_P",
+                      "index": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "chartTypeOverrides": [],
+          "text": "",
+          "selections": []
+        }
+      ],
+      "globalPageBy": {
+        "id": "2aaacc93-bf28-4dcd-b929-2191c007dd90",
+        "type": "Page By",
+        "nests": []
+      },
+      "conditions": [],
+      "ranks": [],
+      "percentiles": [
+        {
+          "name": "Cumulative $ YA",
+          "id": "84629ae8-09f7-475a-908c-62492b15ce96",
+          "cumulative": true,
+          "facts": [
+            {
+              "ascending": true,
+              "baseUuid": "12700|GROUP_LEVEL|12700|0|DOL_YAGO",
+              "baseType": "FACT"
+            },
+            {
+              "ascending": true,
+              "baseUuid": "12700|GROUP_LEVEL|12700|0|DOL_CHG_YAGO",
+              "baseType": "FACT"
+            }
+          ]
+        }
+      ],
+      "quantiles": [],
+      "calculations": [],
+      "conditionalFormatting": [],
+      "prompts": [
+        {
+          "promptId": "Products",
+          "basePromptId": "Products",
+          "promptName": "Products",
+          "dimension": "PRDC",
+          "minSelections": 0,
+          "maxSelections": 0,
+          "coachLine": null,
+          "promptType": "BASE",
+          "type": null,
+          "hidden": null,
+          "editLayoutDisplay": false,
+          "logical": null,
+          "filteredViews": null,
+          "filteredFunctions": null,
+          "subPrompts": null,
+          "lowLevelChar": null
+        },
+        {
+          "promptId": "96769bf0-a83d-434e-be8f-24097bb9a9f5",
+          "basePromptId": "Fact_QF",
+          "promptName": "Facts",
+          "dimension": "FCT",
+          "minSelections": 1,
+          "maxSelections": 0,
+          "coachLine": "Select one to many Store Facts",
+          "promptType": "FIXED_ITEM",
+          "type": null,
+          "hidden": null,
+          "editLayoutDisplay": false,
+          "logical": null,
+          "filteredViews": null,
+          "filteredFunctions": [],
+          "subPrompts": null,
+          "lowLevelChar": null
+        },
+        {
+          "promptId": "Periods",
+          "basePromptId": "Periods",
+          "promptName": "Periods",
+          "dimension": "PRD",
+          "minSelections": 1,
+          "maxSelections": 0,
+          "coachLine": "Select one to many Periods",
+          "promptType": "BASE",
+          "type": null,
+          "hidden": null,
+          "editLayoutDisplay": false,
+          "logical": null,
+          "filteredViews": null,
+          "filteredFunctions": [
+            {
+              "id": null,
+              "name": null,
+              "title": "GROUP BY",
+              "summary": null
+            },
+            {
+              "id": null,
+              "name": null,
+              "title": "SUM",
+              "summary": null
+            },
+            {
+              "id": null,
+              "name": null,
+              "title": "ALL",
+              "summary": null
+            }
+          ],
+          "subPrompts": null,
+          "lowLevelChar": {
+            "id": "WEEK_IN_MONTH_DSC",
+            "invisible": null,
+            "nodeId": null,
+            "type": "CHARACTERISTIC",
+            "desc": "Week in Month Description",
+            "appDesc": null,
+            "leaf": null,
+            "valid": null,
+            "status": null,
+            "promptId": null,
+            "originalPromptId": null,
+            "showTotalsOnly": null,
+            "addTotal": null,
+            "baseUuid": null,
+            "upcCount": 0,
+            "thruStart": null,
+            "thruIndex": 0,
+            "usedInLayout": null,
+            "includeAllChildren": null,
+            "functionType": null,
+            "pathInfo": null,
+            "pathInfoIds": null,
+            "pathInfoTypes": null,
+            "children": null
+          }
+        },
+        {
+          "promptId": "Markets",
+          "basePromptId": "Markets",
+          "promptName": "Markets",
+          "dimension": "MRKT",
+          "minSelections": 1,
+          "maxSelections": 0,
+          "coachLine": "Select one to many Markets",
+          "promptType": "BASE",
+          "type": null,
+          "hidden": null,
+          "editLayoutDisplay": false,
+          "logical": null,
+          "filteredViews": null,
+          "filteredFunctions": [
+            {
+              "id": null,
+              "name": null,
+              "title": "GROUP BY",
+              "summary": null
+            },
+            {
+              "id": null,
+              "name": null,
+              "title": "SUM",
+              "summary": null
+            },
+            {
+              "id": null,
+              "name": null,
+              "title": "ALL",
+              "summary": null
+            }
+          ],
+          "subPrompts": null,
+          "lowLevelChar": {
+            "id": "MKT_DISP_NAME",
+            "invisible": null,
+            "nodeId": null,
+            "type": "CHARACTERISTIC",
+            "desc": "Market Display Name",
+            "appDesc": null,
+            "leaf": null,
+            "valid": null,
+            "status": null,
+            "promptId": null,
+            "originalPromptId": null,
+            "showTotalsOnly": null,
+            "addTotal": null,
+            "baseUuid": null,
+            "upcCount": 0,
+            "thruStart": null,
+            "thruIndex": 0,
+            "usedInLayout": null,
+            "includeAllChildren": null,
+            "functionType": null,
+            "pathInfo": null,
+            "pathInfoIds": null,
+            "pathInfoTypes": null,
+            "children": null
+          }
+        },
+        {
+          "promptId": "Product Share",
+          "basePromptId": "Product Share",
+          "promptName": "Product Share Basis",
+          "dimension": "PRDC",
+          "minSelections": 1,
+          "maxSelections": 1,
+          "coachLine": "Select one to many Product Shares",
+          "promptType": "BASE",
+          "type": "tree",
+          "hidden": false,
+          "editLayoutDisplay": true,
+          "logical": false,
+          "filteredViews": null,
+          "filteredFunctions": [
+            {
+              "id": null,
+              "name": null,
+              "title": "SUM",
+              "summary": null
+            },
+            {
+              "id": null,
+              "name": null,
+              "title": "ALL",
+              "summary": null
+            }
+          ],
+          "subPrompts": [],
+          "lowLevelChar": {
+            "id": "SCAN_CORE_PRDC_DSC_SHORT",
+            "invisible": null,
+            "nodeId": null,
+            "type": "CHARACTERISTIC",
+            "desc": "SHORT PRODUCT DESCRIPTION",
+            "appDesc": null,
+            "leaf": null,
+            "valid": null,
+            "status": null,
+            "promptId": null,
+           "originalPromptId": null,
+            "showTotalsOnly": null,
+            "addTotal": null,
+            "baseUuid": null,
+            "upcCount": 0,
+            "thruStart": null,
+            "thruIndex": 0,
+            "usedInLayout": null,
+            "includeAllChildren": null,
+            "functionType": null,
+            "pathInfo": null,
+            "pathInfoIds": null,
+            "pathInfoTypes": null,
+            "children": null
+          }
+        }
+      ]
+    }
+  ]
+}
