@@ -1,16 +1,18 @@
 {
-    "name": "riParser",
-    "description": "RI MCM Parser",
-    "version": "0.0.1",
-    "private": false,
-    "dependencies": {
-        "oboe": "*",
-        "q": "*",
-        "underscore": "*",
-        "promise": "*",
-        "JSONStream": "*",
-        "event-stream": "*",
-        "amqp": "*",
-	"couchbase": "*"
-    }
+  "name": "riParser",
+  "description": "RI MCM Parser",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "oboe": "*",
+    "q": "*",
+    "underscore": "*",
+    "promise": "*",
+    "JSONStream": "*",
+    "JSON": "*",
+    "event-stream": "*",
+    "amqp": "*",
+    "couchbase": "*",
+    "amqplib": "^0.1.3"
+  }
 }
