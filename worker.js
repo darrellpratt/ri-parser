@@ -2,7 +2,7 @@ var amqp = require('amqp'),
   path = require('path'),
   fs = require('graceful-fs'),
   oboe = require('oboe'),
-  q = require('q'),
+  // q = require('q'),
   JSON = require('JSON'),
   _ = require('underscore'),
   JSONStream = require('JSONStream'),
@@ -76,7 +76,7 @@ connection.on('ready', function(){
 
 // search the RI for changes
 function findVals(file) {
-  var deferred = q.defer();
+  // var deferred = q.defer();
   var promptMap = new Object();
   logging(file);
 
@@ -106,9 +106,16 @@ function findVals(file) {
         console.log('request completed');
         console.log(foundChange);
         if (foundChange) {
-          // console.log(json);
+          console.log(json);
           console.log(chalk.bgCyan(file + '+++++++++++++++++++++++HITHITHIT'));
           hitCount++;
+
+          // write new file
+          fs.writeFile('./data/dirty/' + file, json, function (err) {
+            if (err) throw err;
+             console.log('It\'s saved!');
+          });
+
         } else {
           console.log(chalk.bgRed(file + '***********************NO HIT'));
           missCount++;
@@ -116,9 +123,9 @@ function findVals(file) {
       });
 
 	// q
-  deferred.resolve();
+  // deferred.resolve();
 
-  return deferred.promise;
+  // return deferred.promise;
 };
 
 function logging(tick) {
