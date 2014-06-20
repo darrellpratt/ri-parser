@@ -1,5 +1,6 @@
 node_modules
 data/lrg
+data/prod
 RI
-
+data/dirty
 .DS_Store
